@@ -29,7 +29,7 @@ A modern, responsive portfolio website built with Next.js 16, React, and Tailwin
 - **Styling**: [Tailwind CSS v4](https://tailwindcss.com)
 - **Animations**: [Framer Motion](https://www.framer.com/motion)
 - **Theme Management**: [next-themes](https://github.com/pacocoursey/next-themes)
-- **Deployment**: [Vercel](https://vercel.com)
+- **Deployment**: [Github](https://github.com)
 
 ## 🚀 Getting Started
 
