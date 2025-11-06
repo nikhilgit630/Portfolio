@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation"
 
 const ProjectsSection = () => {
   const pathname = usePathname()
-  const isGithubHost = pathname.startsWith("/Portfolio")
+  const isGithubHost = pathname.startsWith("/Portfolio/")
   
   const projects = [
     {

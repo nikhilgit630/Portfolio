@@ -25,7 +25,7 @@ const AboutSection = () => {
   }
 
   const pathname = usePathname()
-  const isGithubHost = pathname.startsWith("/Portfolio")
+  const isGithubHost = pathname.startsWith("/Portfolio/")
   const prefix = isGithubHost ? "/Portfolio" : ""
 
   return (
