@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { MapPin, Briefcase, Code } from "lucide-react"
+import { usePathname } from "next/navigation"
 
 const AboutSection = () => {
   const containerVariants = {
@@ -23,6 +24,10 @@ const AboutSection = () => {
     },
   }
 
+  const pathname = usePathname()
+  const isGithubHost = pathname.startsWith("/Portfolio")
+  const prefix = isGithubHost ? "/Portfolio" : ""
+
   return (
     <section id="about" className="section-container">
       <motion.div
@@ -35,7 +40,7 @@ const AboutSection = () => {
         {/* Left Column - Image */}
         <motion.div variants={itemVariants} className="relative">
           <div className="w-full aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl overflow-hidden">
-            <img src="/developer-avatar.jpg" alt="Nikhil Dubey" className="w-full h-full object-cover" />
+            <img src={`${prefix}/developer-avatar.jpg`} alt="Nikhil Dubey" className="w-full h-full object-cover" />
           </div>
         </motion.div>
 
@@ -48,7 +53,7 @@ const AboutSection = () => {
             <p className="text-lg text-muted-foreground leading-relaxed">
               I'm a passionate Software Developer with a B.Tech degree in Information Technology from IIIT Allahabad.
               Specialized in building scalable web systems using modern technologies like React, Next.js, and Node.js. I
-              combine my expertise in full-stack development with a strong foundation in ethical hacking and
+              combine my expertise in full-stack development with a strong foundation in DSA Along with ethical hacking and
               cybersecurity.
             </p>
           </div>
@@ -67,7 +72,7 @@ const AboutSection = () => {
               <Code className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
               <div>
                 <h3 className="font-semibold text-sm">Specialization</h3>
-                <p className="text-muted-foreground text-sm">MERN Stack & Next.js</p>
+                <p className="text-muted-foreground text-sm">MERN Stack & DSA</p>
               </div>
             </div>
 

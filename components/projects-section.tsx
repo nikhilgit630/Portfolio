@@ -2,26 +2,30 @@
 
 import { motion } from "framer-motion"
 import { ExternalLink, Github } from "lucide-react"
+import { usePathname } from "next/navigation"
 
 const ProjectsSection = () => {
+  const pathname = usePathname()
+  const isGithubHost = pathname.startsWith("/Portfolio")
+  
   const projects = [
     {
       title: "Chat Web App",
       description:
         "Real-time chat application with messaging, file sharing, and user presence. Built with full-stack MERN architecture featuring WebSocket integration for instant communication.",
-      image: "/chat-application-dashboard.jpg",
+      image: isGithubHost ? "/Portfolio/chat-app.jpg" :"/chat-application-dashboard.jpg",
       tech: ["React", "Node.js", "Express", "MongoDB", "Socket.io", "PostgreSQL", "Redis"],
       demo: "#",
-      code: "https://github.com/",
+      code: "https://github.com/nikhilgit630",
     },
     {
       title: "AI Face Generation System",
       description:
         "Automatic face generation from text descriptions using BERT embeddings and GAN architecture. Interactive Streamlit interface for real-time image generation and customization.",
-      image: "/ai-generated-faces.jpg",
+      image: isGithubHost ? "/Portfolio/ai-generated-faces.jpg" :"/ai-generated-faces.jpg",
       tech: ["Python", "BERT", "GAN", "Streamlit", "TensorFlow", "PyTorch"],
       demo: "#",
-      code: "https://github.com/",
+      code: "https://github.com/nikhilgit630",
     },
   ]
 

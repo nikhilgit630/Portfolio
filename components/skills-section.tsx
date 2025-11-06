@@ -42,8 +42,10 @@ const SkillsSection = () => {
       skills: [
         { name: "Ethical Hacking", level: 85 },
         { name: "Burp Suite", level: 80 },
-        { name: "Python", level: 85 },
-        { name: "C++", level: 80 },
+        { name: "Wireshark", level: 75 },
+        {name: "DSA", level: 92 },
+        { name: "C++", level: 95 },
+        { name: "Python", level: 75 },
         { name: "Socket.io", level: 85 },
         { name: "Penetration Testing", level: 75 },
       ],

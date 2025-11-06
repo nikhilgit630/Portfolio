@@ -47,7 +47,7 @@ const Footer = () => {
                 LinkedIn
               </a>
               <a
-                href="https://github.com/"
+                href="https://github.com/nikhilgit630"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block hover:text-primary transition-colors"
@@ -71,7 +71,7 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
             <p>© {currentYear} Nikhil Dubey. All rights reserved.</p>
             <p className="flex items-center gap-1">
-              Crafted with <Heart className="w-4 h-4 text-red-500 fill-red-500" /> and React
+              Crafted with <Heart className="w-4 h-4 text-red-500 fill-red-500" /> and Next.js
             </p>
           </div>
         </div>

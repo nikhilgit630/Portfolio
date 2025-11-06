@@ -16,12 +16,14 @@ const AchievementsSection = () => {
       title: "Cybersecurity Certification",
       description: "Government of India certified in Cybersecurity from C-DAC with expertise in penetration testing.",
       category: "Security",
+      url:"https://drive.google.com/file/d/14GkFPJ9ABU53fAGBsfgrrSJcMmVhZwUb/view"
     },
     {
       icon: Trophy,
       title: "Python Specialization",
       description: "Completed advanced Python course with focus on backend development and automation.",
       category: "Programming",
+      url:"https://drive.google.com/file/d/1IZMHc75pp9D45lbJbWQsOnKScU2MzUNE/view"
     },
     {
       icon: Award,
@@ -109,6 +111,16 @@ const AchievementsSection = () => {
               </div>
               <h3 className="text-xl font-bold mb-2">{achievement.title}</h3>
               <p className="text-muted-foreground">{achievement.description}</p>
+              {achievement.url && (
+                <a
+                  href={achievement.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-block text-primary font-semibold hover:inline-table"
+                >
+                  View Certificate →
+                </a>
+              )}
             </motion.div>
           )
         })}

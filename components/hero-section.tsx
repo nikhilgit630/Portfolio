@@ -55,7 +55,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="text-xl sm:text-2xl lg:text-3xl font-semibold text-foreground/80 mb-4"
         >
-          Software Developer | MERN | Next.js | Ethical Hacker
+          Software Developer | MERN | DSA | Ethical Hacker
         </motion.h2>
 
         {/* Tagline */}
@@ -76,7 +76,10 @@ const HeroSection = () => {
           className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
         >
           <a
-            href="#"
+            href="https://drive.google.com/file/d/1iFGxRr-b0NGlgOKk4MLuMQJwOgE-I0Q9/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            download
             className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-colors duration-200"
           >
             <Download className="w-5 h-5" />
