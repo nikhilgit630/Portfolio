@@ -27,6 +27,8 @@ const AboutSection = () => {
   const pathname = usePathname()
   const isGithubHost = pathname.startsWith("/Portfolio/")
   const prefix = isGithubHost ? "/Portfolio" : ""
+  console.log("pathname About Section:", pathname)
+  console.log("About Section - isGithubHost:", isGithubHost)
 
   return (
     <section id="about" className="section-container">

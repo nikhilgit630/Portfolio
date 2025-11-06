@@ -8,6 +8,9 @@ const ProjectsSection = () => {
   const pathname = usePathname()
   const isGithubHost = pathname.startsWith("/Portfolio/")
   
+  console.log("pathname Project Section:", pathname)
+  console.log("isGithubHost:", isGithubHost)
+  
   const projects = [
     {
       title: "Chat Web App",
