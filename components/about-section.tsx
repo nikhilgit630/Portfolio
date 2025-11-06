@@ -42,7 +42,7 @@ const AboutSection = () => {
         {/* Left Column - Image */}
         <motion.div variants={itemVariants} className="relative">
           <div className="w-full aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl overflow-hidden">
-            <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/developer-avatar.jpg`}  alt="Nikhil Dubey" className="w-full h-full object-cover" />
+            <img src={`${process.env.NEXT_PUBLIC_BASE_PATH}/developer-avatar.jpg`}  alt="Nikhil Dubey" className="w-full h-full object-cover" />
           </div>
         </motion.div>
 
