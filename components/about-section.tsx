@@ -42,7 +42,7 @@ const AboutSection = () => {
         {/* Left Column - Image */}
         <motion.div variants={itemVariants} className="relative">
           <div className="w-full aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl overflow-hidden">
-            <img src={`${process.env.NEXT_PUBLIC_BASE_PATH}/developer-avatar.jpg`}  alt="Nikhil Dubey" className="w-full h-full object-cover" />
+            <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/developer-avatar.jpg`}  alt="Nikhil Dubey" className="w-full h-full object-cover" />
           </div>
         </motion.div>
 
@@ -63,7 +63,7 @@ const AboutSection = () => {
           {/* Quick Facts */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="flex items-start gap-3 p-4 rounded-lg bg-secondary/50 hover:bg-secondary transition-colors">
-              <Briefcase className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
+              <Briefcase className="w-5 h-5 text-primary mt-1 shrink-0" />
               <div>
                 <h3 className="font-semibold text-sm">Experience</h3>
                 <p className="text-muted-foreground text-sm">3+ years in full-stack development</p>
