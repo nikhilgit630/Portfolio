@@ -3,18 +3,13 @@
 const isGithub = process.env.NEXT_PUBLIC_IS_GITHUB === "true";
 
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-
+  output: "export", // ✅ Required for GitHub Pages (Next.js 16)
   images: {
-    unoptimized: true,
+    unoptimized: true, // ✅ Needed for static export
   },
 
-  // ✅ Apply basePath only for GitHub Pages
+  // ✅ GitHub Pages specific path
   basePath: isGithub ? "/Portfolio" : "",
-
-  // ✅ Static asset prefix only for GitHub
   assetPrefix: isGithub ? "/Portfolio/" : "",
 };
 
