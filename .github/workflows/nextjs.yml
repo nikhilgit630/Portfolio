@@ -48,7 +48,7 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
-        # ✅ static_site_generator removed (prevents override)
+        # ❌ static_site_generator removed (we manage config manually)
 
       - name: Restore cache
         uses: actions/cache@v4
@@ -63,10 +63,10 @@ jobs:
 
       - name: Build with Next.js
         env:
-          NEXT_PUBLIC_IS_GITHUB: true       # ✅ GitHub-only environment flag
+          NEXT_PUBLIC_IS_GITHUB: true
+          NEXT_PUBLIC_FORCE_BASEPATH: true     # ✅ Forces basePath always on GitHub
         run: |
           ${{ steps.detect-package-manager.outputs.runner }} next build
-          # ✅ no next export (Next.js 16 handles export automatically)
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
