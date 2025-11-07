@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion"
 import { MapPin, Briefcase, Code } from "lucide-react"
-import { usePathname } from "next/navigation"
 
 const AboutSection = () => {
   const containerVariants = {
@@ -24,11 +23,6 @@ const AboutSection = () => {
     },
   }
 
-  const pathname = usePathname()
-  const isGithubHost = pathname.startsWith("/Portfolio/")
-  const prefix = isGithubHost ? "/Portfolio" : ""
-  console.log("pathname About Section:", pathname)
-  console.log("About Section - isGithubHost:", isGithubHost)
 
   return (
     <section id="about" className="section-container">
@@ -42,7 +36,7 @@ const AboutSection = () => {
         {/* Left Column - Image */}
         <motion.div variants={itemVariants} className="relative">
           <div className="w-full aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl overflow-hidden">
-            <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/developer-avatar.jpg`}  alt="Nikhil Dubey" className="w-full h-full object-cover" />
+            <img src={`${process.env.NEXT_PUBLIC_BASE_PATH}/developer-avatar.jpg`}  alt="Nikhil Dubey" className="w-full h-full object-cover" />
           </div>
         </motion.div>
 
