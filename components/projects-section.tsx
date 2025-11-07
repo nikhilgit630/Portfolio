@@ -2,21 +2,14 @@
 
 import { motion } from "framer-motion"
 import { ExternalLink, Github } from "lucide-react"
-import { usePathname } from "next/navigation"
 
 const ProjectsSection = () => {
-  const pathname = usePathname()
-  const isGithubHost = pathname.startsWith("/Portfolio/")
-  
-  console.log("pathname Project Section:", pathname)
-  console.log("isGithubHost:", isGithubHost)
-  
   const projects = [
     {
       title: "Chat Web App",
       description:
         "Real-time chat application with messaging, file sharing, and user presence. Built with full-stack MERN architecture featuring WebSocket integration for instant communication.",
-      image: isGithubHost ? "/Portfolio/chat-app.jpg" :"/chat-application-dashboard.jpg",
+      image:"/chat-application-dashboard.jpg",
       tech: ["React", "Node.js", "Express", "MongoDB", "Socket.io", "PostgreSQL", "Redis"],
       demo: "#",
       code: "https://github.com/nikhilgit630",
@@ -25,7 +18,7 @@ const ProjectsSection = () => {
       title: "AI Face Generation System",
       description:
         "Automatic face generation from text descriptions using BERT embeddings and GAN architecture. Interactive Streamlit interface for real-time image generation and customization.",
-      image: isGithubHost ? "/Portfolio/ai-generated-faces.jpg" :"/ai-generated-faces.jpg",
+      image:"/ai-generated-faces.jpg",
       tech: ["Python", "BERT", "GAN", "Streamlit", "TensorFlow", "PyTorch"],
       demo: "#",
       code: "https://github.com/nikhilgit630",
@@ -84,7 +77,7 @@ const ProjectsSection = () => {
             {/* Image */}
             <div className="relative overflow-hidden h-64 bg-gradient-to-br from-primary/20 to-accent/20">
               <img
-                src={project.image || "/placeholder.svg"}
+                src={project.image ?`${process.env.NEXT_PUBLIC_BASE_PATH}${project.image}`: `${process.env.NEXT_PUBLIC_BASE_PATH}/placeholder.svg`}
                 alt={project.title}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
