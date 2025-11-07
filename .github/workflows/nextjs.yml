@@ -64,7 +64,8 @@ jobs:
       - name: Build with Next.js
         env:
           NEXT_PUBLIC_IS_GITHUB: true
-          NEXT_PUBLIC_FORCE_BASEPATH: true     # ✅ Forces basePath always on GitHub
+          NEXT_PUBLIC_FORCE_BASEPATH: true
+          NEXT_PUBLIC_BASE_PATH: "/Portfolio/"          
         run: |
           ${{ steps.detect-package-manager.outputs.runner }} next build
 
