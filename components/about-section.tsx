@@ -76,7 +76,7 @@ const AboutSection = () => {
               <MapPin className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
               <div>
                 <h3 className="font-semibold text-sm">Location</h3>
-                <p className="text-muted-foreground text-sm">Prayagraj, India</p>
+                <p className="text-muted-foreground text-sm">Varanasi, India</p>
               </div>
             </div>
 
