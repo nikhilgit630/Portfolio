@@ -60,7 +60,7 @@ const AboutSection = () => {
               <Briefcase className="w-5 h-5 text-primary mt-1 shrink-0" />
               <div>
                 <h3 className="font-semibold text-sm">Experience</h3>
-                <p className="text-muted-foreground text-sm">3+ years in full-stack development</p>
+                <p className="text-muted-foreground text-sm">1.5+ years in full-stack development</p>
               </div>
             </div>
 
@@ -76,7 +76,7 @@ const AboutSection = () => {
               <MapPin className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
               <div>
                 <h3 className="font-semibold text-sm">Location</h3>
-                <p className="text-muted-foreground text-sm">Allahabad, India</p>
+                <p className="text-muted-foreground text-sm">Prayagraj, India</p>
               </div>
             </div>
 
