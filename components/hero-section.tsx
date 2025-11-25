@@ -76,7 +76,7 @@ const HeroSection = () => {
           className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
         >
           <a
-            href="https://drive.google.com/file/d/1iFGxRr-b0NGlgOKk4MLuMQJwOgE-I0Q9/view?usp=sharing"
+            href="https://drive.google.com/file/d/1FhqNbA7Ys7l1VPjWZdFAMrbalPx2gowC/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             download
