@@ -15,7 +15,7 @@ const ProjectsSection = () => {
       code: "https://github.com/nikhilgit630",
     },
     {
-      title: "AI Face Generation System",
+      title: "Text-to-Face Generator by GenAI",
       description:
         "Automatic face generation from text descriptions using BERT embeddings and GAN architecture. Interactive Streamlit interface for real-time image generation and customization.",
       image:"/ai-generated-faces.jpg",

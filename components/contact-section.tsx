@@ -4,7 +4,7 @@ import type React from "react"
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { Mail, Loader } from "lucide-react"
+import { Mail, Loader, PhoneCallIcon } from "lucide-react"
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -104,6 +104,21 @@ const ContactSection = () => {
                   nik16dube@gmail.com
                 </a>
               </div>
+            </div>
+          </div>
+          {/* phone call */}
+          <div className="flex items-start gap-4">
+            <div className="p-3 rounded-lg bg-primary/10 mt-1">
+              <PhoneCallIcon className="w-5 h-5 text-primary" />
+            </div>
+            <div>
+              <h4 className="font-semibold mb-1">Phone</h4>
+              <a
+                href="tel:+919415926758"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                +91 9415926758
+              </a>
             </div>
           </div>
 

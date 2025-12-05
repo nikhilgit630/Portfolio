@@ -29,7 +29,7 @@ A modern, responsive portfolio website built with Next.js 16, React, and Tailwin
 - **Styling**: [Tailwind CSS v4](https://tailwindcss.com)
 - **Animations**: [Framer Motion](https://www.framer.com/motion)
 - **Theme Management**: [next-themes](https://github.com/pacocoursey/next-themes)
-- **Deployment**: [Vercel](https://vercel.com)
+- **Deployment**: [Github](https://github.com)
 
 ## 🚀 Getting Started
 
@@ -142,7 +142,7 @@ The contact form currently logs messages to the console. To enable email functio
 
 ## 🚀 Deployment
 
-### Deploy to Vercel (Recommended)
+### Deploy to github (Recommended)
 
 1. **Push to GitHub**
    \`\`\`bash
@@ -151,8 +151,8 @@ The contact form currently logs messages to the console. To enable email functio
    git push origin main
    \`\`\`
 
-2. **Connect to Vercel**
-   - Go to [vercel.com](https://vercel.com)
+2. **Connect to github**
+   - Go to [github.com](https://github.com)
    - Click "New Project" and import your GitHub repository
    - Click "Deploy"
 
@@ -160,7 +160,7 @@ The contact form currently logs messages to the console. To enable email functio
    - Go to Project Settings → Environment Variables
    - Add your API keys (e.g., `RESEND_API_KEY`)
 
-Your portfolio will be live at `https://your-domain.vercel.app`
+Your portfolio will be live at `https://your-domain.github.app`
 
 ### Deploy to Other Platforms
 
